@@ -22,9 +22,3 @@ class LocatorOrder:
     check_status_butt = [By.XPATH, ".//button[contains(text(),'Посмотреть статус')]"]
     cancel_order_butt = [By.XPATH, ".//button[contains(text(),'Отменить заказ')]"]
     view_order_butt = By.XPATH, ".//button[contains(text(),'Посмотреть')]"
-
-    list_firstname = ['Иван', 'Петр', 'Федя']
-    list_surname = ['Иванов', 'Петров', 'Сумкин']
-    list_address = ['Абрикосовая', 'Виноградная', 'Грушевая']
-    list_phone = ['89998887766', '81112223344', '85551234567']
-    list_delivery = ['19.08.2023', '19.09.2023', '19.10.2023']

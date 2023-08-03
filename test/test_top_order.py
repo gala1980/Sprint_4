@@ -1,6 +1,6 @@
 import allure
-
 from locators.locator_order import LocatorOrder
+from locators.data import DataVar
 from pages.order_page import OrderPage
 from pages.base_page import BasePage
 
@@ -20,13 +20,13 @@ class TestTopOrder:
             OrderPage(driver).order_part_button_order_click(LocatorOrder.top_order_button)
             OrderPage(driver)\
                 .order_part_scooter_drv(LocatorOrder.scooter_dr_text,
-                                        LocatorOrder.firstname, LocatorOrder.list_firstname[i],
-                                        LocatorOrder.surname, LocatorOrder.list_surname[i],
-                                        LocatorOrder.addsress, LocatorOrder.list_address[i],
-                                        LocatorOrder.phone_number, LocatorOrder.list_phone[i],
+                                        LocatorOrder.firstname, DataVar.list_firstname[i],
+                                        LocatorOrder.surname, DataVar.list_surname[i],
+                                        LocatorOrder.addsress, DataVar.list_address[i],
+                                        LocatorOrder.phone_number, DataVar.list_phone[i],
                                         LocatorOrder.list_railway_button, LocatorOrder.railway_station,
                                         LocatorOrder.next_button)
-            OrderPage(driver).order_part_rent(LocatorOrder.date_delivery, LocatorOrder.list_delivery[i],
+            OrderPage(driver).order_part_rent(LocatorOrder.date_delivery, DataVar.list_delivery[i],
                                                  LocatorOrder.period_rent, LocatorOrder.choose_period_rent,
                                                  LocatorOrder.form_order_button, LocatorOrder.confirm_order_text,
                                                  LocatorOrder.confirm_order_button, LocatorOrder.text_order_success)
